@@ -5,7 +5,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
   padding: 1rem;
 }
 
@@ -65,7 +64,17 @@
 }
 
 @media (max-width:768px) {
-  .navbar-menu{
+  .navbar-menu {
     display: none;
+  }
+}
+
+@media (max-width:576px) {
+  .navbar-box {
+    width: 100%;
+  }
+
+  .navbar-box .logo{
+    height: 20px;
   }
 }

@@ -52,10 +52,14 @@
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  width: 25vw;
+  width: 15vw;
 }
 
 @media (max-width:768px) {
+  .header-box {
+    height: 60vh;
+  }
+
   .header-contents h2 {
     font-size: 2rem;
   }
@@ -64,7 +68,24 @@
     display: none;
   }
 
+  .header-contents button {
+    width: 20vw;
+  }
+}
+
+@media (max-width:576px) {
   .header-box {
-    height: 60vh;
+    height: 40vh;
+  }
+
+  .header-contents h2 {
+    font-size: 1.5rem;
+  }
+
+  .header-contents button {
+    width: 30vw;
+    font-weight: 300;
+    font-size: .7rem;
+    padding: .6rem;
   }
 }
